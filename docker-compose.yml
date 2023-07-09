@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: CONVERTME
+      MYSQL_USER: thiego
+      MYSQL_PASSWORD: docker
+      MYSQL_ROOT_PASSWORD: super@docker
+    ports:
+      - 3306:3306
