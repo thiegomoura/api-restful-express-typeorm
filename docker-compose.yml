@@ -4,9 +4,10 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_DATABASE: CONVERTME
-      MYSQL_USER: thiego
-      MYSQL_PASSWORD: docker
-      MYSQL_ROOT_PASSWORD: super@docker
+      MYSQL_HOST: your-aurora-host
+      MYSQL_PORT: your-aurora-port
+      MYSQL_DATABASE: your-aurora-database
+      MYSQL_USER: your-aurora-username
+      MYSQL_PASSWORD: your-aurora-password
     ports:
       - 3306:3306

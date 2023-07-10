@@ -22,7 +22,7 @@ Create at root folder the `.env` file with the application port and database inf
 Change the database credentials in the docker-composer file at root folder, and run the follow command:
 
 ```bash
-$ docker-compose up
+$ docker-compose up -d
 ```
 ### Run server
 
